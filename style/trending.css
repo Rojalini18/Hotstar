@@ -1,0 +1,82 @@
+body {
+  background-color: #131a27;
+  color: white;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #131a27;
+  padding: 8px 45px;
+  /* border: 1px solid red; */
+  margin-bottom: 10px;
+}
+
+#left {
+  /* border: 1px solid red; */
+  gap: 25px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+#right {
+  color: white;
+  gap: 15px;
+  display: flex;
+  align-items: center;
+}
+
+#right > button {
+  background-color: #1f80e0;
+  color: white;
+  border: none;
+  font-weight: bold;
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+#right > input {
+  background-color: #131a27;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  font-weight: bold;
+  font-size: 15px;
+  height: 30px;
+  color: white;
+}
+
+#kid {
+  font-style: italic;
+  color: orange;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin-top: 8px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#main {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+#main > div {
+  width: 160px;
+  height: 180px;
+  text-align: center;
+}
+
+#main img {
+  width: 160px;
+  height: 180px;
+  border-radius: 10px;
+}

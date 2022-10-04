@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disney+ Hotstar</title>
+    <link
+      rel="shortcut icon"
+      href="data:image/jpeg;base64,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"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/4c322811d7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style/index.css" />
+  </head>
+
+  <body>
+    <div id="nav">
+      <div id="left">
+        <i class="fa-solid fa-bars"></i>
+        <a href="./index.html">
+          <img
+            src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+        /></a>
+
+        <a href="./pages/trending.html">
+          <p>TV</p>
+        </a>
+        <a href="./pages/trending.html">
+          <p>Movies</p>
+        </a>
+        <a href="./pages/trending.html">
+          <p>Sports</p>
+        </a>
+        <a href="./pages/trending.html">
+          <p>Disney+</p>
+        </a>
+        <h3 id="kid">KiDS</h3>
+      </div>
+
+      <div id="right">
+        <input
+          type="text"
+          placeholder="Search"
+          oninput="debounce(main,0)"
+          id="query"
+        />
+        <button>SUBSCRIBE</button>
+        <button>LOGIN</button>
+        <!-- <p>LOGIN</p> -->
+      </div>
+    </div>
+    <div id="search"></div>
+    <div id="slider">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/5318/1095318-h-a89162a0c1a9"
+              class="d-block w-100"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/1401/1111401-h-1082af959e1b"
+              class="d-block w-100"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/1511/1161511-h-a103f5d4c916"
+              class="d-block w-100"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="box">
+      <div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ynUvjTurk_T0__Zth2EyhXdFo7IOBmYwaA&usqp=CAU"
+        />
+      </div>
+      <div>
+        <h3>P I X A R</h3>
+      </div>
+      <div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdbPJoc1VT2MidPNzrBb_sJSSmG0R6RELhYQ&usqp=CAU"
+        />
+      </div>
+      <div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzNJwhfZCavbyqc9m_8dYuVe_ALUCLOXYz6w&usqp=CAU"
+        />
+      </div>
+      <div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrCZnIhu7n5n3Uu9kh9nqD0--ckCZXxo0FwA&usqp=CAU"
+        />
+      </div>
+    </div>
+    <h4>Recommended For You</h4>
+    <div class="main-carousel">
+      <div class="cell">
+        <img
+          src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:q-80/et00078838-xsbjhpcqjd-portrait.jpg"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0VeFNli1nwEjzx1BZGTfCb6RAdew9YvfUx3IS6_RL-1ghdT0HhWmc-eixibls0TY0Wew&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-2TpSbxni1yGhEfYhFyDN9Gt34K_qMrpIZMIwIne-i3WlnVBfm9cIlNT6CoJHVe0rACM&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTAT6R5qrXa5Tt7hcEQuCz0yzBnYsqFvycUZpGmcW7yi9KSvr5shgO5s7Ls4mqTC93OM8&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWYcOUHo68xmNAIP59OgJiC6VWAsECmewVr3qbbjBYTgxbXtypMW1XYZ3TITzOt7rs6YA&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDBanJ-BTNIHsQ2WJY-xXNfDg6D5Ps8ewrH3SxhOQ4yoDO0p7oQkfM9hCM61DmbKgEv_I&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeJPB_pVf5iPXDbgDyI3s9zQR01aabv2ADt1wAkeA2NkBmFa18irssXxLn7JaXXH8EMp4&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlKt3-jdiKubfQkrZgZYRGzinT_KFhLplZ81fwZ2h6Qaz0mYQ1RTcp4V2Z4CTXS-w9TNE&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:q-80/et00319643-dcyqanxvvs-portrait.jpg"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThu67jgy1xXDvBt70ECCo0NG4Oxn_K_Bd_BlLgtfnqZ348dnE6T2qq6CXwOLsupPiG6Jo&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZmaFli4H8LOSZtep7rz-0rPkBv4BHMDIi5PY8F4cCh2JVPwZ2UXD27U4FXTG_lK9qp2g&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg_PGbIo0hNsXsVnxMabK4D2rsDnMEzfCunIKRs2wFI6Nu9wiBHfHL9m0b9UZDQs42UDU&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ_KEYNW1SEiDR8-4I-mp2kZX8rXjogS36k4mtWncNzF-YlJ8JwNdP8jj-nWmWGss2H1A&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3H4kd3CFOvziQ4KveFHTg5fM-AAin86TQVFd2MOTGU1J_h0qsZDUzW9KZl4kCCp2YvK0&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://www.bollymoviereviewz.com/wp-content/uploads/2013/05/330px-Fantastic_Beasts2C_The_Secrets_of_Dumbledore_teaser_poster.png"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3H4kd3CFOvziQ4KveFHTg5fM-AAin86TQVFd2MOTGU1J_h0qsZDUzW9KZl4kCCp2YvK0&usqp=CAU"
+        />
+      </div>
+
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxKDY36HOuQB-oO3d71TQV3AtMfRggMb775NQAtX_zOnOR8opcMQYevBf7SqzDSR174oA&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIOt8Nl8qc8BS7yU1nGEmI6ahDVxhuzsfgXw&usqp=CAU"
+        />
+      </div>
+    </div>
+
+    <h4>New To Disney+</h4>
+    <div class="main-carousel">
+      <div class="cell">
+        <img
+          src="https://filmfare.wwmindia.com/content/2019/dec/sab-kushal-mangal-upcoming-bollywood-movies-2020-21577106172.jpg"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgZ3kRyGGtQSNqGQm9Z23wgkPuMHR_x-NG2XsNY6o0rd-y0j3XB71TGivAZUDlfn7ctiw&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB9nsVp1tI2bvABjShaBN6A7kklePqwVGYqVwjaOT65sanhGsoW2uEzrw8m0AnyXh0uDg&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmaMgMoUi5uXNhDH-qufMYUsY4qKUnB04adkzs4itWNLD5KWbrwJONq-eHOelcfIw79Dk&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9XoW8UY1Vbwc6GVwmQ7YhPoi0YAq-4yXQQrClvNvGrmag9zgL_4uUEUW3lZJ2qAlTwSE&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSTeZWV7ba2AavrekGITpbhBZ3AsdZdIlshNpqjG61pfdqUCPCJh24ycK8mWgCtTEhovI&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZjUVyg8iKq8HPcolo8PS-qV_17kD8CNld1xUM1va0AHO3kN-A8AMpPZXjDsnq6ZLSNZU&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlKt3-jdiKubfQkrZgZYRGzinT_KFhLplZ81fwZ2h6Qaz0mYQ1RTcp4V2Z4CTXS-w9TNE&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://images004-a.erosnow.com/movie/5/1060465/img145210/6984137/1060465_6984137.jpg"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsqZWzrCe-Wlko0cyrJmjh6PakQZRCVTh88ydn5vfcwdXmbKtQFCwFf47Hr8tkT-gP5Lo&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnx5pB9xrbgV5yjGfGtyvnXR7B0fzUJgB7AHU5tx4d-jl5I6vF3N7E9PQFQPEm9ob4c_I&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg_PGbIo0hNsXsVnxMabK4D2rsDnMEzfCunIKRs2wFI6Nu9wiBHfHL9m0b9UZDQs42UDU&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ_KEYNW1SEiDR8-4I-mp2kZX8rXjogS36k4mtWncNzF-YlJ8JwNdP8jj-nWmWGss2H1A&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3H4kd3CFOvziQ4KveFHTg5fM-AAin86TQVFd2MOTGU1J_h0qsZDUzW9KZl4kCCp2YvK0&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://www.bollymoviereviewz.com/wp-content/uploads/2013/05/330px-Fantastic_Beasts2C_The_Secrets_of_Dumbledore_teaser_poster.png"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3H4kd3CFOvziQ4KveFHTg5fM-AAin86TQVFd2MOTGU1J_h0qsZDUzW9KZl4kCCp2YvK0&usqp=CAU"
+        />
+      </div>
+
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxKDY36HOuQB-oO3d71TQV3AtMfRggMb775NQAtX_zOnOR8opcMQYevBf7SqzDSR174oA&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIOt8Nl8qc8BS7yU1nGEmI6ahDVxhuzsfgXw&usqp=CAU"
+        />
+      </div>
+    </div>
+
+    <h4>Women Lead the Way</h4>
+    <div class="main-carousel">
+      <div class="cell">
+        <img
+          src="https://qqcdnpictest.mxplay.com/pic/9dd708b0b2ae01fd8d9e64ef2a606817/en/2x3/320x480/test_pic1584082955979.webp"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr_lrpkeo77vGdb1M-0sJPbSlOKsO-hVXjHArr1jeRDtKaHp8ZSsgylYOzcV7DJgt8XG0&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFBjzAKMaqSkGNYgp30mww1gSVjXVuzW8GwAgpj5FI-TB-grGXLHlDRetfMu3rGNcmwzE&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeOjQ55LUdRqOlS2di1TiVtn4b-y1ozvlGdVJW8u6ykHroMMnkCYNayH9ALKHq9L1REVk&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqI5G3y0f-P3q2y05y3AwjsIWb41X2etNIR7JGI9hF4xGML0FJ-nOaEbZ1CzZYRh-h2CU&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://images004-a.erosnow.com/movie/0/1063580/img145210/6893472/1063580_6893472.jpg"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG2FWjLYvpEAu5H9frVbVxkYZtvoJHPFqjkUN-_2mjWZo18O8T5GMiR91ysPeZL2TEaqo&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHMa13g0ZmBWLkl-2DEHBrwllxXr0cSVRA3AMdrend65ZnCaiK2ddZIirP05bo0rDSnx8&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_ktcWPwtKu903hyrPhUI1NFMt3FnWPVDopesnscIXZKx_FhpkDG1PvLGGkZZx7U6VVw4&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThu67jgy1xXDvBt70ECCo0NG4Oxn_K_Bd_BlLgtfnqZ348dnE6T2qq6CXwOLsupPiG6Jo&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZmaFli4H8LOSZtep7rz-0rPkBv4BHMDIi5PY8F4cCh2JVPwZ2UXD27U4FXTG_lK9qp2g&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg_PGbIo0hNsXsVnxMabK4D2rsDnMEzfCunIKRs2wFI6Nu9wiBHfHL9m0b9UZDQs42UDU&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ_KEYNW1SEiDR8-4I-mp2kZX8rXjogS36k4mtWncNzF-YlJ8JwNdP8jj-nWmWGss2H1A&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3H4kd3CFOvziQ4KveFHTg5fM-AAin86TQVFd2MOTGU1J_h0qsZDUzW9KZl4kCCp2YvK0&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://www.bollymoviereviewz.com/wp-content/uploads/2013/05/330px-Fantastic_Beasts2C_The_Secrets_of_Dumbledore_teaser_poster.png"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3H4kd3CFOvziQ4KveFHTg5fM-AAin86TQVFd2MOTGU1J_h0qsZDUzW9KZl4kCCp2YvK0&usqp=CAU"
+        />
+      </div>
+
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxKDY36HOuQB-oO3d71TQV3AtMfRggMb775NQAtX_zOnOR8opcMQYevBf7SqzDSR174oA&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIOt8Nl8qc8BS7yU1nGEmI6ahDVxhuzsfgXw&usqp=CAU"
+        />
+      </div>
+    </div>
+
+    <h4>Hit Movies</h4>
+    <div class="main-carousel">
+      <div class="cell">
+        <img
+          src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_2_5x/sources/r1/cms/prod/7676/647676-v"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://images1.livehindustan.com/uploadimage/library/2022/01/11/16_9/16_9_1/pushpa_hindi_amazon_prime_video_1641877729.jpg"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://qqcdnpictest.mxplay.com/pic/f352d6df67f3d2fa47bf50849d5b5956/en/2x3/320x480/test_pic1575644572850.webp"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTAT6R5qrXa5Tt7hcEQuCz0yzBnYsqFvycUZpGmcW7yi9KSvr5shgO5s7Ls4mqTC93OM8&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDctIpmK0J6xZERUs6fo-zljXtVqXcSdubshYLnimY8cVyronUGxtuKayMw7YjqPjQxJg&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0p4X0AnUo_ChIZGnQuRQkC5Pr_6MqxtDzjLNSK62DwWxI7nEIz96wQ5DhggzMuxGFUDo&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeJPB_pVf5iPXDbgDyI3s9zQR01aabv2ADt1wAkeA2NkBmFa18irssXxLn7JaXXH8EMp4&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlKt3-jdiKubfQkrZgZYRGzinT_KFhLplZ81fwZ2h6Qaz0mYQ1RTcp4V2Z4CTXS-w9TNE&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5ucyYsEzJJZps4qNN_z_So2AMRl0y9qT8T_SvY7_0CJbG9hElzmtx0GptJ2r3ReF0p7w&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZsj6PyEBNwc_K9yG_psDGHNqdE-xDJn9lb8JAqCsSu5EhH9z_7_vhGc3u7M535XnSsYY&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGRrGt-CatSMbmiBuD24EGVOCK18R6C_9tWC0OkdkrahbAFUxTohrRwBIab0E5gNmG6Pg&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7yB4HZDgD0dp9WDRZcMt3YBF2gv5ld_O6VEX-ee6MKufonQMyHiC3sm_0Bi3OeYN5L44&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ_KEYNW1SEiDR8-4I-mp2kZX8rXjogS36k4mtWncNzF-YlJ8JwNdP8jj-nWmWGss2H1A&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3H4kd3CFOvziQ4KveFHTg5fM-AAin86TQVFd2MOTGU1J_h0qsZDUzW9KZl4kCCp2YvK0&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://www.bollymoviereviewz.com/wp-content/uploads/2013/05/330px-Fantastic_Beasts2C_The_Secrets_of_Dumbledore_teaser_poster.png"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3H4kd3CFOvziQ4KveFHTg5fM-AAin86TQVFd2MOTGU1J_h0qsZDUzW9KZl4kCCp2YvK0&usqp=CAU"
+        />
+      </div>
+
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxKDY36HOuQB-oO3d71TQV3AtMfRggMb775NQAtX_zOnOR8opcMQYevBf7SqzDSR174oA&usqp=CAU"
+        />
+      </div>
+      <div class="cell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIOt8Nl8qc8BS7yU1nGEmI6ahDVxhuzsfgXw&usqp=CAU"
+        />
+      </div>
+    </div>
+
+    <div id="footer">
+      <div id="one">
+        <div>
+          <p>About Disney+ Hotstar</p>
+          <p>Terms of Use</p>
+          <p>Privacy Policy</p>
+          <p>FAQ</p>
+          <p>Feedback</p>
+          <p>Careers</p>
+        </div>
+        <div>
+          <p>
+            © 2022 STAR. All Rights Reserved. HBO, Home Box Office and all
+            related channel and programming logos are service marks of, and all
+            related programming visuals and elements are the property of, Home
+            Box Office, Inc. All rights reserved.
+          </p>
+        </div>
+      </div>
+
+      <div id="two">
+        <div>
+          <p>Connect with us</p>
+        </div>
+        <div>
+          <i class="fa-brands fa-facebook"></i
+          ><i class="fa-brands fa-twitter-square"></i>
+        </div>
+      </div>
+
+      <div id="three">
+        <div>
+          <p>Disney+ Hotstar App</p>
+        </div>
+        <div>
+          <img src="https://thumbs.dreamstime.com/b/app-store-155321652.jpg" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="./script/index.js"></script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"
+></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript">
+  $(".main-carousel").flickity({
+    // options
+    cellAlign: "left",
+    wrapAround: true,
+    freeScroll: true,
+  });
+</script>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+  crossorigin="anonymous"
+></script>
